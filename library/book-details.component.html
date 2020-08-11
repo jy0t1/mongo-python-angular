@@ -1,0 +1,92 @@
+<div class="panel-heading">
+    <h3 class="panel-title">I am in book-details.component</h3>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">{{book.name}}</h3>
+    </div>
+    <div class="panel-body">
+        <div class="col-xs-10">
+            <div class="row">
+                <div class="col-xs-4">
+                    <img class="imageClass" [src]="book.photoPath" />
+                </div>
+                <div class="col-xs-8">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            ID
+                        </div>
+                        <div class="col-xs-6">
+                            : {{book.id}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-8">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Author
+                        </div>
+                        <div class="col-xs-6">
+                            : {{book.author}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-8">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Published On
+                        </div>
+                        <div class="col-xs-6">
+                            : {{book.published}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-8">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Pages
+                        </div>
+                        <div class="col-xs-6">
+                            : {{book.pages}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-8">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Available?
+                        </div>
+                        <div class="col-xs-6">
+                            : {{book.isAvailable}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-8">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Category
+                        </div>
+                        <div class="col-xs-6">
+                            : {{book.category}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-8">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Cover Type
+                        </div>
+                        <div class="col-xs-6">
+                            : {{book.bindType}}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <a class="btn btn-primary" routerLink="/list" queryParamsHandling="preserve">Back to List</a>
+    </div>
+</div>
