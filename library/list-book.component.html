@@ -1,0 +1,20 @@
+<div class="form-group">
+    <input type="text" class="form-control" id="searchTerm" placeholder="Search by Name" [(ngModel)]="searchTerm"
+        name="searchTerm" style="width:300px"/>
+</div>
+<h4 #h1Variable>
+</h4>
+<div class="panel panel-primary" *ngFor="let book of books | bookFilter:searchTerm">
+    <!-- <div (click)="h1Variable.innerHTML = childComponent.getId()" > -->
+    <div >
+        <app-display-book [book]="book" [searchTerm]="searchTerm" #childComponent></app-display-book>
+    </div>
+</div>
+
+<!-- needed for one by one record display
+<button (click)="nextBook()" class="btn btn-primary">
+    Next Book
+</button>
+<br/><br/>
+<app-display-book [book]="bookToDisplay"></app-display-book>
+-->
